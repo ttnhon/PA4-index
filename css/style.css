@@ -64,10 +64,20 @@ h1,h2,h3,h4,h5,h6,label,p{
 .header-login ul li a:hover {
     color: #F67777;
 }
+
+.header-login {
+	float: right;
+}
+
+.header-login ul {
+	float: right;
+}
+
 .header-top {
     background-color: #2E2E2E;
 	padding: 0.3em 0;
 }
+
 .header-social ul li a i{
 	width: 17px;
     height: 17px;
@@ -204,7 +214,7 @@ a.item_add {
 }
 
 .heart{
-	float:left;
+	float:right;
 	margin-top: 0.7em;
 }
 .heart li{
@@ -227,6 +237,7 @@ a.item_add {
 	float:right;
 }
 .search-right {
+	float: right;
     padding: 0.6em 0 0;
 }
 
@@ -2028,6 +2039,7 @@ h4.grid2 {
 .header-top {
     padding: 0.53em 0;
 }
+
 .header-login ul li a {
     font-size: 0.78em;
     margin: 0 0.1em;
