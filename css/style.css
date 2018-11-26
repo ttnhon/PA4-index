@@ -1,9 +1,4 @@
-/*Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-@font-face {
+/*@font-face {
     font-family: 'Oxygen-Bold';
     src:url(../fonts/Oxygen-Bold.ttf) format('truetype');
 }
@@ -18,11 +13,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 @font-face{
 	font-family:'Oxygen-Regular';
 	src:url(../fonts/Oxygen-Regular.ttf) format('truetype');
-}
+}*/
 html,body{
 	background:#fff;
 	font-size: 100%;
-	font-family:'Oxygen-Regular';
+	font-family:Arial;
 	 
 }
 body a{
@@ -163,7 +158,7 @@ div#bs-megadropdown-tabs {
 	font-size: 1.5em;
     color: #000;
     margin-bottom: 0.5em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 /*--cart--*/
 .itemContainer{
@@ -273,12 +268,12 @@ a.item_add {
     line-height: 1.8em;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-family: 'Ubuntu-Bold';
+    font-family: Arial;
 }
 .col-2 h2{
 	font-size: 2.5em;
     line-height: 1.8em;
-    font-family: 'Oxygen-Bold';
+    font-family: Arial;
 }
 .col-2 h2 a{
 	text-decoration:none;
@@ -325,13 +320,13 @@ a.buy-now:hover{
 	color:#fff;
 	font-size:1.1em;
 	text-transform:uppercase;
-	font-family: 'Oxygen-Bold';
+	font-family: Arial;
 }
 .col-pic h5{
 	color:#F67777;
 	font-size:2em;
 	text-transform:uppercase;
-	font-family: 'Ubuntu-Bold';
+	font-family: Arial;
 }
 .col-pic label{
 	width:100px;
@@ -346,7 +341,7 @@ a.buy-now:hover{
 	font-size: 2.5em;
     color: #000000;
     line-height: 1.8em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 	text-align:center;
 }
 
@@ -365,7 +360,7 @@ a.buy-now:hover{
 	font-size: 0.9em;
     color: #F67777;
     line-height: 1.8em;
-    font-family: 'Ubuntu-Bold';
+    font-family: Arial;
 }
 /*----*/
 /*-----------------------------------------------------------------------------------*/
@@ -472,7 +467,7 @@ a.buy-now:hover{
 	    color: #F67777;
     font-size: 2em;
     text-transform: uppercase;
-    font-family: 'Ubuntu-Bold';
+    font-family: Arial;
 }
 .b-animate-go:hover .b-from-left{
 	left:0;
@@ -483,7 +478,7 @@ a.buy-now:hover{
 	    color: #fff;
     font-size: 1.1em;
     text-transform: uppercase;
-    font-family: 'Oxygen-Bold';
+    font-family: Arial;
 }
 .b-animate-go:hover .b-from-right{
 	right:0;
@@ -522,7 +517,7 @@ a.buy-now:hover{
 /*----*/
 .mid-1 h6 {
     font-size: 1.2em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .mid-1 h6 a {
     color: #000000;
@@ -614,7 +609,7 @@ a.buy-now:hover{
 .banner-top h1{
 	font-size:3em;
 	color:#fff;
-	font-family: 'Ubuntu-Regular';
+	font-family: Arial;
 }
 .banner-top h2{
 	font-size:0.9em;
@@ -727,7 +722,7 @@ a.cart:hover{
     padding-top: 2em;
 }
 h4.cate {
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
     font-size: 1.7em;
     color:#F67777;
 }
@@ -750,7 +745,7 @@ ul.kid-menu{
 	color: #000;
 	font-size: 0.9em;
 	text-decoration:none;
-	    font-family: 'Oxygen-Bold';
+	    font-family: Arial;
 }
 .menu-drop > li > a:hover{
 	color:#f67777;
@@ -785,7 +780,7 @@ ul.kid-menu li,ul.cute li{
 	color: #000;
     text-transform: uppercase;
     font-size: 1.8em;
-    font-family: 'Ubuntu-Bold';
+    font-family: Arial;
 }
 p.in-para{
 color: #B3B3B3;
@@ -803,7 +798,7 @@ color: #B3B3B3;
 span.reducedfrom {
 	    color: #F67777;
     font-size: 1.5em;
-    font-family: 'Ubuntu-Bold';
+    font-family: Arial;
     float: left;
 }
 .price_single a {
@@ -816,7 +811,7 @@ h4.quick {
 	color: #000;
 	font-size:1.2em;
 	text-transform: uppercase;
-	font-family: 'Ubuntu-Regular';
+	font-family: Arial;
 	margin-top: 1em;
 }
 p.quick_desc {
@@ -939,7 +934,7 @@ ul.product-qty {
 	padding-bottom: 0.5em;
 	display: block;
 	text-transform: uppercase;
-	font-family: 'Ubuntu-Regular';
+	font-family: Arial;
 }
 .product-qty select {
 	border: 1px solid #eee;
@@ -1132,7 +1127,7 @@ nav.nav-sidebar {
 .login-right h3{
 	font-size: 1.5em;
     color: #000000;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .login-right p {
     font-size: 0.9em;
@@ -1151,7 +1146,7 @@ nav.nav-sidebar {
 	font-size: 1.5em;
 	color:#000;
 	line-height:1.4em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .contact-top div{
 	padding:0.5em 0;
@@ -1197,7 +1192,7 @@ nav.nav-sidebar {
     font-size: 1.5em;
 	color:#000;
 	line-height:1.4em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .contact-left p {
     font-size: 0.9em;
@@ -1223,7 +1218,7 @@ nav.nav-sidebar {
 	font-size: 1.2em;
 	color:#000;
 	line-height:1.4em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .address1 p{
 	margin: 0;
@@ -1251,7 +1246,7 @@ nav.nav-sidebar {
 .four h3{
 	font-size: 7em;
     color: #F67777;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .four p{
 	font-size: 0.9em;
@@ -1271,7 +1266,7 @@ th{
 	color: #000000;
     font-size: 1.4em;
     font-weight: 400;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 th, td {
     padding: 10px;
@@ -1290,7 +1285,7 @@ a.at-in {
 }
 .sed h5{
   	font-size: 1.1em;
-	font-family: 'Ubuntu-Regular';
+	font-family: Arial;
 }
 .sed h5 a{
     color: #F67777;
@@ -1341,7 +1336,7 @@ a.at-in {
     background: #F5F5F5;
     border-bottom: 1px solid #A6A5A5;
     padding: 0.8em;
-    font-family: 'Ubuntu-Regular';
+    font-family: Arial;
 }
 .wishlist h6 a{
 	text-decoration:none;
@@ -1361,7 +1356,7 @@ a.at-in {
 .footer-middle-in h6{
 	font-size: 1.4em;
     color: #fff;
-    font-family: 'Ubuntu-Bold';
+    font-family: Arial;
 	margin-bottom: 1em;
     text-transform: uppercase;
 }
@@ -1470,7 +1465,7 @@ ul.tag-in li a:hover{
 .page-header h3{
 	font-size: 3em;
 	color:#000;
-	font-family: 'Ubuntu-Regular';
+	font-family: Arial;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   padding: 8px;

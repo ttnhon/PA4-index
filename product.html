@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Shopin
+  </title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- Custom Theme files -->
+  <!-- theme-style -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- //theme-style -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="Shopin Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndroId Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+  <script type="application/x-javascript">
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+  <!-- theme-style -->
+  <link href="css/style4.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- //theme-style -->
+  <script src="js/jquery.min.js"></script>
+  <!-- - start-rate-- -->
+  <script src="js/jstarbox.js"></script>
+  <link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+  <script src="./js/products.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var products = [
+        {
+          id: 1,
+          name: "somi nam màu thanh",
+          img: "images/pc.jpg",
+          des: "somi, áo sơ mi, sơ mi, màu thanh, thanh"
+        },
+        {
+          id: 2,
+          name: "thun nu màu hồng",
+          img: "images/pc1.jpg",
+          des: "thun, áo thun, hồng, màu hồng"
+        },
+        {
+          id: 3,
+          name: "somi nam caro",
+          img: "images/pc2.jpg",
+          des: "sơ mi, somi, áo sơ mi, caro"
+        },
+        {
+          id: 4,
+          name: "somi nữ caro hồng",
+          img: "images/pc3.jpg",
+          des: "somi, áo sơ mi, sơ mi, caro, hồng"
+        },
+        {
+          id: 5,
+          name: "thun đỏ",
+          img: "images/pc4.jpg",
+          des: "thun, đỏ, áo thun"
+        },
+        {
+          id: 7,
+          name: "somi nữ caro trắng",
+          img: "images/pc6.jpg",
+          des: "somi, áo sơ mi, sơ mi, caro, trắng"
+        },
+        {
+          id: 6,
+          name: "somi nam caro hồng",
+          img: "images/pc5.jpg",
+          des: "somi, áo sơ mi, sơ mi, caro, hồng"
+        },
+        {
+          id: 8,
+          name: "somi nam màu xám",
+          img: "images/pc7.jpg",
+          des: "sơ mi, somi, áo sơ mi, xám"
+        },
+        {
+          id: 9,
+          name: "somi nam màu xám",
+          img: "images/pc7.jpg",
+          des: "sơ mi, somi, áo sơ mi, xám"
+        },
+        {
+          id: 10,
+          name: "somi nam màu xám",
+          img: "images/pc7.jpg",
+          des: "sơ mi, somi, áo sơ mi, xám"
+        }
+      ];
+      /* script show list products */
+      var count = 0;
+
+      products.forEach(element => {
+        var url = document.URL;
+        var str = url.slice(url.lastIndexOf("=") + 1);
+        var res = decodeURIComponent(str);
+        console.log("search: ", res);
+        var re = new RegExp(res, "g");
+
+        var n = element.des.search(res);
+        console.log("position: ", n);
+
+        console.log(element.img);
+        var img = element.img;
+        var name = element.name;
+        if (n != -1) {
+          var html =
+            '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 simpleCart_shelfItem"><div class=" mid-pop"><div class="pro-img"><img src="' +
+            img +
+            '"class="img-responsive" alt="" /> <div class="zoom-icon "> <a class="picture" href="' +
+            img +
+            '" rel="title" class="b-link-stripe b-animate-go thickbox"><i class="glyphicon glyphicon-search icon " /></a>' +
+            '<a href="single.html"><i class="glyphicon glyphicon-menu-right icon" /></a></div></div><div class="mid-1"><div class="women">' +
+            '<div class="women-top"><span>Woman</span><h6><a href="single.html">' +
+            name +
+            "</a></h6>" +
+            '</div><div class="img item_add"><a href="#"><img src="images/ca.png" alt="" /></a></div><div class="clearfix" />' +
+            '</div><div class="mid-2"><p><label>$100.00</label><em class="item_price">$70.00</em></p><div class="block">' +
+            '<div class="starbox small ghosting" /></div><div class="clearfix"></div></div></div></div></div></div>';
+          count++;
+          $("#show-products").append(html);
+        }
+      });
+      $("#show-products").append('<div class="clearfix"></div>');
+
+      if (count == 0) {
+        products.forEach(element => {
+          var img = element.img;
+          var name = element.name;
+          var html =
+            '<div style="float : left;" class="col-xs-4 col-sm-4 col-md-4 col-lg-4 simpleCart_shelfItem"><div class=" mid-pop"><div class="pro-img"><img src="' +
+            img +
+            '"class="img-responsive" alt="" /> <div class="zoom-icon "> <a class="picture" href="' +
+            img +
+            '" rel="title" class="b-link-stripe b-animate-go thickbox"><i class="glyphicon glyphicon-search icon " /></a>' +
+            '<a href="single.html"><i class="glyphicon glyphicon-menu-right icon" /></a></div></div><div class="mid-1"><div class="women">' +
+            '<div class="women-top"><span>Woman</span><h6><a href="single.html">' +
+            name +
+            "</a></h6>" +
+            '</div><div class="img item_add"><a href="#"><img src="images/ca.png" alt="" /></a></div><div class="clearfix" />' +
+            '</div><div class="mid-2"><p><label>$100.00</label><em class="item_price">$70.00</em></p><div class="block">' +
+            '<div class="starbox small ghosting" /></div><div class="clearfix"></div></div></div></div></div></div>';
+
+          $("#show-products").append(html);
+        });
+        $("#show-products").append('<div class="clearfix"></div>');
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    jQuery(function () {
+      jQuery(".starbox").each(function () {
+        var starbox = jQuery(this);
+        starbox
+          .starbox({
+            average: starbox.attr("data-start-value"),
+            changeable: starbox.hasClass("unchangeable")
+              ? false
+              : starbox.hasClass("clickonce")
+                ? "once"
+                : true,
+            ghosting: starbox.hasClass("ghosting"),
+            autoUpdateAverage: starbox.hasClass("autoupdate"),
+            buttons: starbox.hasClass("smooth")
+              ? false
+              : starbox.attr("data-button-count") || 5,
+            stars: starbox.attr("data-star-count") || 5
+          })
+          .bind("starbox-value-changed", function (event, value) {
+            if (starbox.hasClass("random")) {
+              var val = Math.random();
+              starbox.next().text(" " + val);
+              return val;
+            }
+          });
+      });
+    });
+  </script>
+  <!-- -//End-rate-- -->
+  <link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="container">
+      <div class="head">
+        <div class=" logo">
+          <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-top">
+      <div class="container">
+        <div class="col-sm-5 col-md-offset-2  header-login">
+          <ul>
+            <li><a href="orders.html">Kiểm tra đơn hàng</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+            <li><a href="register.html">Đăng ký</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-top">
+        <div class="col-sm-8 col-md-offset-2 h_menu4">
+          <nav class="navbar nav_bottom" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+              <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!--
+                Collect the nav links, forms, and other content for toggling
+              -->
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+              <ul class="nav navbar-nav nav_1">
+                <li><a class="color" href="index.html">Trang chủ</a></li>
+
+                <li class="dropdown mega-dropdown active">
+                  <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Nữ<span class="caret"></span></a>
+                  <div class="dropdown-menu ">
+                    <div class="menu-top">
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Phụ Kiện</a></li>
+                            <li><a href="product.html">Túi</a></li>
+                            <li><a href="product.html">Mũ & Nón</a></li>
+                            <li><a href="product.html">Áo Nỉ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Áo khoác</a></li>
+                            <li><a href="product.html">Jeans</a></li>
+                            <li><a href="product.html">Trang Sức</a></li>
+                            <li><a href="product.html">Áo len</a></li>
+                            <li><a href="product.html">Áo Khoác Da</a></li>
+                            <li><a href="product.html">Sơ Mi Tay Dài</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Áo Thun</a></li>
+                            <li><a href="product.html">Giày Dép</a></li>
+                            <li><a href="product.html">Kính</a></li>
+                            <li><a href="product.html">Quần Thể Thao</a></li>
+                            <li><a href="product.html">Đồ bơi</a></li>
+                            <li><a href="product.html">Quần dài</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Áo Sơ Mi</a></li>
+                            <li><a href="product.html">Đồ lót & Vớ</a></li>
+                            <li><a href="product.html">Áo vest</a></li>
+                            <li><a href="product.html">Áo Khoác</a></li>
+                            <li><a href="product.html">Jeans</a></li>
+                            <li><a href="product.html">Trang Sức</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1 col5">
+                        <img src="images/me.png" class="img-responsive" alt="" />
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="dropdown mega-dropdown active">
+                  <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Nam<span class="caret"></span></a>
+                  <div class="dropdown-menu mega-dropdown-menu">
+                    <div class="menu-top">
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Phụ Kiện</a></li>
+                            <li><a href="product.html">Túi</a></li>
+                            <li><a href="product.html">Mũ & Nón</a></li>
+                            <li><a href="product.html">Áo Nỉ</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Áo khoác</a></li>
+                            <li><a href="product.html">Jeans</a></li>
+                            <li><a href="product.html">Trang Sức</a></li>
+                            <li><a href="product.html">Áo Len</a></li>
+                            <li><a href="product.html">Áo Khoác Da</a></li>
+                            <li><a href="product.html">Sơ Mi Tay Dài</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1">
+                        <div class="h_nav">
+
+                          <ul>
+                            <li><a href="product.html">Áo thun</a></li>
+                            <li><a href="product.html">Giày Dép</a></li>
+                            <li><a href="product.html">Kính</a></li>
+                            <li><a href="product.html">Quần thể thao</a></li>
+                            <li><a href="product.html">Đồ Bơi</a></li>
+                            <li><a href="product.html">Quần Dài</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1">
+                        <div class="h_nav">
+                          <ul>
+                            <li><a href="product.html">Áo Sơ Mi</a></li>
+                            <li><a href="product.html">Đồ lót & Vớ</a></li>
+                            <li><a href="product.html">Áo Vest</a></li>
+                            <li><a href="product.html">Áo Khoác</a></li>
+                            <li><a href="product.html">Jeans</a></li>
+                            <li><a href="product.html">Trang Sức</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col1 col5">
+                        <img src="images/me1.png" class="img-responsive" alt="" />
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </li>
+                <li><a class="color3" href="product.html">Giảm giá</a></li>
+                <li><a class="color4" href="404.html">Giới Thiệu</a></li>
+                <li><a class="color6" href="contact.html">Liên Hệ</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+        <div class="col-sm-2 search-right">
+          <ul class="heart">
+            <li>
+              <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i></a>
+            </li>
+            <li>
+              <a href="checkout.html">
+                <img src="images/cart.png" alt="" />
+              </a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+
+          <!-- - -->
+
+          <!-- -pop-up-box-- -->
+          <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+          <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+          <!-- -//pop-up-box-- -->
+          <div id="small-dialog" class="mfp-hide">
+            <form class="search-top" id="search-form">
+              <div class="login-search">
+                <input type="text" name="search" value="áo khoác" placeholder="Search.." />
+                <input type="submit" value="" />
+              </div>
+            </form>
+          </div>
+          <script>
+            $(document).ready(function () {
+              $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: "auto",
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+              });
+            });
+          </script>
+          <!-- - -->
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <!-- banner -->
+  <div class="banner-top">
+    <div class="container">
+      <h1>Sản Phẩm</h1>
+      <em></em>
+      <h2><a href="index.html">Trang chủ</a><label>/</label>Sản Phẩm</h2>
+    </div>
+  </div>
+  <!-- content -->
+  <div class="product">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+          <div class="mid-popular" id="show-products"></div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-bottom">
+          <!-- categories -->
+          <div class=" rsidebar span_1_of_left">
+            <h4 class="cate">Danh Mục</h4>
+            <ul class="menu-drop">
+              <li class="item1">
+                <a href="#">Nam </a>
+                <ul class="cute">
+                  <li class="subitem1">
+                    <a href="product.html">Thể thao </a>
+                  </li>
+                  <li class="subitem2">
+                    <a href="product.html">Phong cách</a>
+                  </li>
+                  <li class="subitem3">
+                    <a href="product.html">Quý phái</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item2">
+                <a href="#">Nữ </a>
+                <ul class="cute">
+                  <li class="subitem1">
+                    <a href="product.html">Khỏe khoắn </a>
+                  </li>
+                  <li class="subitem2">
+                    <a href="product.html">Độc và lạ </a>
+                  </li>
+                  <li class="subitem3">
+                    <a href="product.html">Quý phái </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item3">
+                <a href="#">Trẻ em</a>
+                <ul class="cute">
+                  <li class="subitem1">
+                    <a href="product.html">Thể thao </a>
+                  </li>
+                  <li class="subitem2">
+                    <a href="product.html">Năng động </a>
+                  </li>
+                  <li class="subitem3">
+                    <a href="product.html">Đến trường</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="item4">
+                <a href="#">Phụ kiện</a>
+                <ul class="cute">
+                  <li class="subitem1">
+                    <a href="product.html">Dây nịt </a>
+                  </li>
+                  <li class="subitem2">
+                    <a href="product.html">Ví </a>
+                  </li>
+                  <li class="subitem3">
+                    <a href="product.html">Dây chuyền</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="item4">
+                <a href="#">Giày</a>
+                <ul class="cute">
+                  <li class="subitem1">
+                    <a href="product.html">Giày nam </a>
+                  </li>
+                  <li class="subitem2">
+                    <a href="product.html">Giày nữ </a>
+                  </li>
+                  <li class="subitem3">
+                    <a href="product.html">Sandal </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- initiate accordion -->
+          <script type="text/javascript">
+            $(function () {
+              var menu_ul = $(".menu-drop > li > ul"),
+                menu_a = $(".menu-drop > li > a");
+              menu_ul.hide();
+              menu_a.click(function (e) {
+                e.preventDefault();
+                if (!$(this).hasClass("active")) {
+                  menu_a.removeClass("active");
+                  menu_ul.filter(":visible").slideUp("normal");
+                  $(this)
+                    .addClass("active")
+                    .next()
+                    .stop(true, true)
+                    .slideDown("normal");
+                } else {
+                  $(this).removeClass("active");
+                  $(this)
+                    .next()
+                    .stop(true, true)
+                    .slideUp("normal");
+                }
+              });
+            });
+          </script>
+          <!-- //menu -->
+          <section class="sky-form">
+            <h4 class="cate">Giảm giá</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" checked="" /><i></i>Lên đến - 10% (20)</label>
+              </div>
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>40% - 50%
+                  (5)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>30% - 20%
+                  (7)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>10% - 5%
+                  (2)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Khác(50)</label>
+              </div>
+            </div>
+          </section>
+
+          <!---->
+          <section class="sky-form">
+            <h4 class="cate">Loại</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" checked="" /><i></i>Mũ lưỡi trai (30)</label>
+              </div>
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Cặp sách
+                  (30)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Túi đeo chéo
+                  (30)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Áo khoác (30)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Jeans
+                  (30)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Áo thun
+                  (30)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Kính mát
+                  (30)</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Kính bơi
+                  (30)</label>
+              </div>
+            </div>
+          </section>
+          <section class="sky-form">
+            <h4 class="cate">Nhãn hiệu</h4>
+            <div class="row row1 scroll-pane">
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" checked="" /><i></i>Roadstar</label>
+              </div>
+              <div class="col col-4">
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Levis</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Bitis</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Nike</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Edwin</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>New
+                  Balance</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Paul
+                  Smith</label>
+                <label class="checkbox"><input type="checkbox" name="checkbox" /><i></i>Ray-Ban</label>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- <div class="clearfix"></div> -->
+      </div>
+    </div>
+
+    <!-- products -->
+
+    <!-- //products -->
+    <!-- brand -->
+    <div class="container">
+      <div class="brand">
+        <div class="col-md-3 brand-grid">
+          <img src="images/ic.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-3 brand-grid">
+          <img src="images/ic1.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-3 brand-grid">
+          <img src="images/ic2.png" class="img-responsive" alt="" />
+        </div>
+        <div class="col-md-3 brand-grid">
+          <img src="images/ic3.png" class="img-responsive" alt="" />
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- //brand -->
+  </div>
+  <!-- //content -->
+  <!-- //footer -->
+  <div class="footer">
+      <div class="footer-middle">
+        <div class="container">
+          <div class="col-md-9 footer-middle-in">
+            <a href="index.html"><img src="images/log.png" alt=""/></a>
+            <p>
+              Suspendisse sed accumsan risus. Curabitur rhoncus, elit vel
+              tincidunt elementum, nunc urna tristique nisi, in interdum libero
+              magna tristique ante. adipiscing varius. Vestibulum dolor lorem.
+            </p>
+          </div>
+
+          <div class="col-md-3 footer-middle-in">
+            <h6>Thông Tin</h6>
+            <ul class=" in">
+              <li><a href="404.html">Giới Thiệu</a></li>
+              <li><a href="contact.html">Liên Hệ</a></li>
+              <li><a href="#">Đổi trả</a></li>
+              <li><a href="contact.html">Bản đồ</a></li>
+            </ul>
+            <ul class="in in1">
+              <li><a href="#">Lịch Sử Đặt Hàng</a></li>
+              <li><a href="wishlist.html">Danh sách mua sau</a></li>
+              <li><a href="login.html">Đăng nhập</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <ul class="footer-bottom-top">
+            <li>
+              <a href="#"
+                ><img src="images/f1.png" class="img-responsive" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/f2.png" class="img-responsive" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="images/f3.png" class="img-responsive" alt=""
+              /></a>
+            </li>
+          </ul>
+          <p class="footer-class">&copy; 2018 Shopin. All Rights Reserved</p>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  <!-- //footer -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+  <script src="js/simpleCart.min.js"></script>
+  <!-- slide -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- light-box-files -->
+  <script src="js/jquery.chocolat.js"></script>
+  <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8" />
+  <!-- light-box-files -->
+  <script type="text/javascript" charset="utf-8">
+    $(function () {
+      $("a.picture").Chocolat();
+    });
+  </script>
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function() {
+    $("#search-form").submit(function(e) {
+      var textSearch = e.target.querySelector('input[name="search"]').value;
+      var url = document.URL;
+      console.log("searching...", textSearch);
+
+      var products = url.substr(0, url.lastIndexOf("/")) + "/product.html";
+      console.log(products + "?q=" + textSearch);
+      window.location.href = (products + "?q=" + textSearch);
+      e.preventDefault();
+    });
+  });
+</script>
