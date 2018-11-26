@@ -375,7 +375,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!--quantity-->
 				 
-			    <a href="#" class="add-to item_add hvr-skew-backward">Add to cart</a>
+			    <a href="javascript:AddToCart()" class="add-to item_add hvr-skew-backward">Add to cart</a>
 			<div class="clearfix"> </div>
 			</div>
 		
@@ -662,6 +662,10 @@ $(window).load(function() {
 </html>
 
 <script>
+	function AddToCart() {
+    alert("Thêm vào giỏ hàng thành công.");
+  }
+  
   $(document).ready(function() {
     $("#search-form").submit(function(e) {
       var textSearch = e.target.querySelector('input[name="search"]').value;
