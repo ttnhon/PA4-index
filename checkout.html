@@ -312,9 +312,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--banner-->
 <div class="banner-top">
 	<div class="container">
-		<h1>Checkout</h1>
+		<h1>Giỏ Hàng</h1>
 		<em></em>
-		<h2><a href="index.html">Home</a><label>/</label>Checkout</h2>
+		<h2><a href="index.html">Trang chủ</a><label>/</label>Giỏ Hàng</h2>
 	</div>
 </div>
 <!--login-->
@@ -342,18 +342,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						});	  
 					});
 			   </script>
+<script>
+	function Check() {
+		$("#products").remove();
+    alert("Thanh toán thành công");
+
+  }
+			   </script>
 <div class="check-out">
 <div class="container">
 	
 	<div class="bs-example4" data-example-id="simple-responsive-table">
     <div class="table-responsive">
-    	    <table class="table-heading simpleCart_shelfItem">
+    	    <table class="table-heading simpleCart_shelfItem" id="products">
 		  <tr>
-			<th class="table-grid">Item</th>
+			<th class="table-grid">Sản Phẩm</th>
 					
-			<th>Prices</th>
-			<th >Delivery </th>
-			<th>Subtotal</th>
+			<th>Giá</th>
+			<th >Số Lượng</th>
+			<th>Thành Tiền</th>
 		  </tr>
 		  <tr class="cart-header">
 
@@ -366,9 +373,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 			<div class="close1"> </div></td>
 			<td>$100.00</td>
-			<td>FREE SHIPPING</td>
+			<td>1</td>
 			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
 		  </tr>
 		  <tr class="cart-header1">
 		  <td class="ring-in"><a href="single.html" class="at-in"><img src="images/ch2.jpg" class="img-responsive" alt=""></a>
@@ -379,9 +385,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 			<div class="close2"> </div></td>
 			<td>$100.00</td>
-			<td>FREE SHIPPING</td>
+			<td>1</td>
 			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
 		  </tr>
 		  <tr class="cart-header2">
 		  <td class="ring-in"><a href="single.html" class="at-in"><img src="images/ch1.jpg" class="img-responsive" alt=""></a>
@@ -392,16 +397,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 			<div class="close3"> </div></td>
 			<td>$100.00</td>
-			<td>FREE SHIPPING</td>
+			<td>1</td>
 			<td class="item_price">$100.00</td>
-			<td class="add-check"><a class="item_add hvr-skew-backward" href="#">Add To Cart</a></td>
 		  </tr>
 		  
 	</table>
 	</div>
 	</div>
 	<div class="produced">
-	<a href="single.html" class="hvr-skew-backward">Produced To Buy</a>
+	<a href="javascript:Check()" class="hvr-skew-backward">Thanh Toán</a>
 	 </div>
 </div>
 </div>
