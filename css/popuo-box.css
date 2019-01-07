@@ -52,6 +52,9 @@ opacity: 1;
 -ms-transform: scale(1);
 -o-transform: scale(1);
 transform: scale(1);
+background: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius: 5px;
 }
 /* animate out */
 .my-mfp-zoom-in.mfp-removing #small-dialog {
@@ -84,7 +87,7 @@ opacity: 0;
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background:#fff;
+  /*background:#fff;*/
  }
 
 .mfp-wrap {
@@ -193,7 +196,7 @@ button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
   border: 0;
-   background:#FFF;
+   background: none;
   -webkit-appearance: none;
   display: block;
   padding: 0;
@@ -208,7 +211,7 @@ button::-moz-focus-inner {
   line-height: 44px;
   position: absolute;
  right: 0px;
-	top: -43px;
+	top: 0px;
   text-decoration: none;
   text-align: center;
   padding: 0 0 18px 10px;
@@ -235,6 +238,9 @@ button::-moz-focus-inner {
 /*----*/
 .login-search{
 	border-bottom:2px solid #1c1c1c;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .login-search input[type="text"] {
 	outline: none;

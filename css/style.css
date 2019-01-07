@@ -180,6 +180,13 @@ div#bs-megadropdown-tabs {
 	float:left;
 	margin: 5px 20px 5px 20px ;
 }
+.cart-item td{
+	color: black;
+}
+
+.cart-item .Total-Name{
+	color: red;
+}
 .item_add {
   color: #000;
   border:none;
